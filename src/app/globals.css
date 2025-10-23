@@ -351,3 +351,49 @@ body {
 .group:hover .group-hover\:to-pink-400 {
   --tw-gradient-to: #f472b6;
 }
+
+/* Side sliding animations for AboutSection */
+[data-scroll-animation="slide-in-left"] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-scroll-animation="slide-in-left"].visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-scroll-animation="slide-in-right"] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-scroll-animation="slide-in-right"].visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Update existing scroll animation styles */
+[data-scroll-animation="slide-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-scroll-animation="slide-up"].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll-animation="fade-in-scale"] {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-scroll-animation="fade-in-scale"].visible {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -21,7 +21,7 @@ export default function ScrollAnimationProvider({
 
           // Add different animation classes based on data attributes
           if (element.dataset.scrollAnimation) {
-            element.classList.add(element.dataset.scrollAnimation);
+            element.classList.add("visible");
           }
 
           // Add staggered animations for children
@@ -32,6 +32,23 @@ export default function ScrollAnimationProvider({
               setTimeout(() => {
                 htmlChild.classList.add("animate-scroll-fade-in-up");
               }, index * 150);
+            });
+          }
+
+          // Add staggered slide-in-right animations for investment cards
+          if (
+            element.classList.contains("grid") &&
+            element.querySelectorAll("[data-scroll-animation='slide-in-right']")
+              .length > 0
+          ) {
+            const cards = element.querySelectorAll(
+              "[data-scroll-animation='slide-in-right']"
+            );
+            cards.forEach((card, index) => {
+              const htmlCard = card as HTMLElement;
+              setTimeout(() => {
+                htmlCard.classList.add("visible");
+              }, index * 200);
             });
           }
 
