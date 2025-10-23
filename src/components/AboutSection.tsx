@@ -2,7 +2,7 @@
 
 export default function AboutSection() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="about-me" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2
           className="text-3xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 bg-clip-text text-transparent opacity-0"
@@ -18,8 +18,8 @@ export default function AboutSection() {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Text Content - Slides in from Left */}
-          <div className="opacity-0" data-scroll-animation="slide-in-left">
+          {/* Text Content - Fades in */}
+          <div className="opacity-0" data-scroll-animation="fade-in-scale">
             <div className="space-y-6">
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 Hi beautiful! I'm Pulchia, and I believe every person has a
@@ -44,8 +44,8 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Image - Slides in from Right */}
-          <div className="opacity-0" data-scroll-animation="slide-in-right">
+          {/* Image - Fades in */}
+          <div className="opacity-0" data-scroll-animation="fade-in-scale">
             <div className="bg-gradient-to-br from-pink-100 via-rose-100 to-pink-200 h-64 md:h-80 lg:h-96 rounded-3xl flex items-center justify-center shadow-lg border-2 border-rose-300 hover:scale-105 transition-transform duration-500">
               <span className="text-rose-500 text-lg md:text-2xl font-bold animate-pulse-gentle text-center px-4">
                 Pulchia's Photo Coming Soon 📷✨

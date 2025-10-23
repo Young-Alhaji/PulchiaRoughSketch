@@ -10,6 +10,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-dancing-script: var(--font-dancing-script);
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
+}
+
+/* Font utility classes */
+.font-dancing-script {
+  font-family: var(--font-dancing-script), cursive;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

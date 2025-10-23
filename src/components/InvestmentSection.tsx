@@ -24,7 +24,7 @@ export default function InvestmentSection() {
           {/* Package 1 */}
           <div
             className="bg-gradient-to-b from-pink-50 via-rose-50 to-pink-100 p-8 rounded-3xl shadow-lg border-2 border-rose-200 hover:scale-105 hover:-rotate-2 transition-all duration-500 hover:shadow-2xl opacity-0"
-            data-scroll-animation="slide-in-right"
+            data-scroll-animation="fade-in-scale"
           >
             <h3 className="text-2xl font-bold text-rose-500 mb-4 text-center animate-bounce-gentle">
               Mini Session ✨
@@ -65,7 +65,7 @@ export default function InvestmentSection() {
           {/* Package 2 - Featured */}
           <div
             className="bg-gradient-to-b from-rose-100 via-pink-100 to-rose-200 p-8 rounded-3xl shadow-xl border-2 border-rose-300 transform scale-105 opacity-0"
-            data-scroll-animation="slide-in-right"
+            data-scroll-animation="fade-in-scale"
           >
             <div className="bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 text-white px-4 py-1 rounded-full text-sm text-center mb-4">
               Most Popular 💖
@@ -101,7 +101,7 @@ export default function InvestmentSection() {
           {/* Package 3 */}
           <div
             className="bg-gradient-to-b from-pink-50 via-rose-50 to-pink-100 p-8 rounded-3xl shadow-lg border-2 border-rose-200 opacity-0"
-            data-scroll-animation="slide-in-right"
+            data-scroll-animation="fade-in-scale"
           >
             <h3 className="text-2xl font-bold text-rose-500 mb-4 text-center">
               Premium Session 👑
