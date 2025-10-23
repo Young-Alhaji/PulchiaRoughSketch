@@ -11,10 +11,16 @@ export default function AboutSection() {
           About Me ✨
         </h2>
         <p
-          className="text-center text-rose-400 text-lg md:text-xl mb-12 italic opacity-0"
+          className="text-center text-rose-400 text-lg md:text-xl mb-12 italic opacity-0 flex items-center justify-center gap-3"
           data-scroll-animation="fade-in-scale"
         >
+          <span className="text-pink-400 text-3xl animate-bounce-gentle">
+            💕
+          </span>
           The heart behind the lens
+          <span className="text-pink-400 text-3xl animate-bounce-gentle">
+            💕
+          </span>
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
