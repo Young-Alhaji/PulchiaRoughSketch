@@ -1,0 +1,353 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Animations */
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes bounce-gentle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation Classes */
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 3s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+.animate-slide-in-from-top {
+  animation: slide-in-from-top 0.8s ease-out forwards;
+}
+
+.animate-slide-in-from-left {
+  animation: slide-in-from-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-from-right {
+  animation: slide-in-from-right 0.8s ease-out forwards;
+}
+
+.animate-slide-in-from-bottom {
+  animation: slide-in-from-bottom 0.8s ease-out forwards;
+}
+
+.animate-wave {
+  animation: wave 2s ease-in-out infinite;
+}
+
+/* Scroll-triggered animation classes */
+.animate-scroll-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-scroll-float-in {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+.animate-floating-continuous {
+  animation: bounce-gentle 3s ease-in-out infinite;
+}
+
+.animate-scroll-scale-in {
+  animation: fade-in 0.8s ease-out forwards, scale-up 0.8s ease-out forwards;
+}
+
+/* Scroll animation states */
+.slide-up {
+  animation: slide-in-from-bottom 0.8s ease-out forwards;
+  opacity: 1 !important;
+}
+
+.scale-up {
+  animation: fade-in 0.8s ease-out forwards;
+  transform: scale(1.02);
+  opacity: 1 !important;
+}
+
+.fade-in-scale {
+  animation: fade-in-up 1s ease-out forwards;
+  opacity: 1 !important;
+}
+
+.animate-scroll-title-reveal {
+  animation: slide-in-from-top 1s ease-out forwards;
+}
+
+/* Animation Delays */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-700 {
+  animation-delay: 0.7s;
+}
+
+.animation-delay-800 {
+  animation-delay: 0.8s;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Set initial state for delayed animations */
+[class*="animation-delay"] {
+  opacity: 0;
+}
+
+/* Scroll-triggered animation classes */
+.animate-scroll-title-reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-scroll-title-reveal.animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.animate-scroll-fade-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-scroll-fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll-animation="slide-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+[data-scroll-animation="slide-up"].animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-scroll-animation="scale-up"] {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease-out;
+}
+
+[data-scroll-animation="scale-up"].animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-scroll-animation="fade-in-scale"] {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s ease-out;
+}
+
+[data-scroll-animation="fade-in-scale"].animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger animation delays for children */
+[data-stagger-item]:nth-child(1) {
+  transition-delay: 0.1s;
+}
+[data-stagger-item]:nth-child(2) {
+  transition-delay: 0.2s;
+}
+[data-stagger-item]:nth-child(3) {
+  transition-delay: 0.3s;
+}
+[data-stagger-item]:nth-child(4) {
+  transition-delay: 0.4s;
+}
+[data-stagger-item]:nth-child(5) {
+  transition-delay: 0.5s;
+}
+[data-stagger-item]:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+/* Hover effects */
+.group:hover .group-hover\:from-pink-300 {
+  --tw-gradient-from: #f9a8d4;
+}
+
+.group:hover .group-hover\:via-rose-300 {
+  --tw-gradient-via: #fda4af;
+}
+
+.group:hover .group-hover\:to-pink-400 {
+  --tw-gradient-to: #f472b6;
+}
