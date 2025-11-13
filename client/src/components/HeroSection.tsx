@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -57,21 +59,28 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center animate-fade-in-up animation-delay-700 px-2">
-          <button
-            onClick={() => scrollToSection("about-me")}
-            className="group bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:shadow-2xl hover:scale-110 transition-all duration-500 animate-pulse-gentle relative overflow-hidden cursor-pointer"
+          <Link
+            href="/portfolio"
+            className="group border-3 border-rose-300 text-rose-500 px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-gradient-to-r hover:from-rose-50 hover:to-pink-50 hover:scale-110 hover:border-pink-400 hover:text-pink-500 transition-all duration-500 relative overflow-hidden cursor-pointer text-center"
+            prefetch={true}
           >
-            <span className="relative z-10">Book Your Session 💕</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-rose-400 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </button>
-
-          <button
-            onClick={() => scrollToSection("photography-sessions")}
-            className="group border-3 border-rose-300 text-rose-500 px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-gradient-to-r hover:from-rose-50 hover:to-pink-50 hover:scale-110 hover:border-pink-400 hover:text-pink-500 transition-all duration-500 relative overflow-hidden cursor-pointer"
-          >
-            <span className="relative z-10">View Portfolio 📸</span>
+            <span className="relative z-10">
+              View Portfolio {"\uD83D\uDCF8"}
+            </span>
             <div className="absolute inset-0 bg-rose-100 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-          </button>
+          </Link>
+
+          <a
+            href="https://wa.me/2349030406284?text=Hi%20Pulchia!%20I'm%20interested%20in%20booking%20a%20photography%20session.%20Can%20we%20discuss%20the%20details?"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:shadow-2xl hover:scale-110 transition-all duration-500 animate-pulse-gentle relative overflow-hidden cursor-pointer text-center"
+          >
+            <span className="relative z-10">
+              Book Your Session {"\uD83D\uDC95"}
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-rose-400 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </a>
         </div>
 
         {/* Additional sparkle effect - Simplified on mobile */}

@@ -1,24 +1,52 @@
 "use client";
 
-import ScrollAnimationProvider from "@/components/ScrollAnimationProvider";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import PhotographySessionsSection from "@/components/PhotographySessionsSection";
-import InvestmentSection from "@/components/InvestmentSection";
-import PoliciesSection from "@/components/PoliciesSection";
-import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
+import { useEffect } from "react";
+import {
+  ScrollAnimationProvider,
+  Navbar,
+  HeroSection,
+  AboutSection,
+  PhotographySessionsSection,
+  InvestmentSection,
+  PoliciesSection,
+  FAQSection,
+  ContactSection,
+  StructuredData,
+} from "@/components";
 
 export default function Home() {
+  useEffect(() => {
+    // Handle hash navigation - lightweight and fast
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      // Use requestAnimationFrame for better performance
+      requestAnimationFrame(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          const navbarHeight = window.innerWidth >= 768 ? 85 : 70;
+          const elementPosition = element.offsetTop - navbarHeight;
+
+          window.scrollTo({
+            top: elementPosition,
+            behavior: "smooth",
+          });
+        }
+      });
+    }
+  }, []);
   return (
-    <ScrollAnimationProvider>
-      <HeroSection />
-      <AboutSection />
-      <PhotographySessionsSection />
-      <InvestmentSection />
-      <PoliciesSection />
-      <FAQSection />
-      <ContactSection />
-    </ScrollAnimationProvider>
+    <>
+      <StructuredData />
+      <Navbar />
+      <ScrollAnimationProvider>
+        <HeroSection />
+        <AboutSection />
+        {/* <PhotographySessionsSection /> */}
+        <InvestmentSection />
+        <PoliciesSection />
+        <FAQSection />
+        <ContactSection />
+      </ScrollAnimationProvider>
+    </>
   );
 }

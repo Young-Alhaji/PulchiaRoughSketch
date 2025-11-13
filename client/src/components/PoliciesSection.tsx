@@ -1,9 +1,8 @@
-"use client";
-
 export default function PoliciesSection() {
   return (
     <section
-      className="py-20 px-4 bg-gradient-to-b from-pink-50 via-rose-50 to-pink-100"
+      id="policies"
+      className="py-16 md:pt-16 px-4 bg-gradient-to-b from-pink-50 via-rose-50 to-pink-100"
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-4xl mx-auto">

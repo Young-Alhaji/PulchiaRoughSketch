@@ -1,9 +1,8 @@
-"use client";
-
 export default function InvestmentSection() {
   return (
     <section
-      className="py-20 px-4 bg-white opacity-0"
+      id="investment"
+      className="py-16 md:pt-16 px-4 bg-white opacity-0"
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-6xl mx-auto">

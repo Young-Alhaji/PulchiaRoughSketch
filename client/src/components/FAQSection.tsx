@@ -1,8 +1,7 @@
-"use client";
-
 export default function FAQSection() {
   return (
     <section
+      id="faq"
       className="py-20 px-4 bg-white"
       data-scroll-animation="fade-in-scale"
     >

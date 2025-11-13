@@ -1,8 +1,6 @@
-"use client";
-
 export default function AboutSection() {
   return (
-    <section id="about-me" className="py-20 px-4 bg-white">
+    <section id="about-me" className="py-16 md:pt-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2
           className="text-3xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 bg-clip-text text-transparent opacity-0"
@@ -31,12 +29,11 @@ export default function AboutSection() {
                 Hi beautiful! I'm Pulchia, and I believe every person has a
                 story worth telling through photography. With 5+ years of
                 capturing life's most precious moments, I specialize in creating
-                dreamy, romantic images that feel like fairy tales come to life.
+                dreamy, romantic images that feel like fairy tales coming to life.
               </p>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                My passion lies in making you feel comfortable, confident, and
-                absolutely radiant during our time together. Whether it's your
-                engagement, maternity journey, or family milestone, I'm here to
+                My passion lies in making you feel comfortable, confident and
+                absolutely radiant during our time together.  I'm here to
                 create magic that you'll treasure forever.
               </p>
               <div className="flex items-center gap-4 pt-4">

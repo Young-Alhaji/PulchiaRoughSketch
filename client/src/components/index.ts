@@ -6,3 +6,5 @@ export { default as PoliciesSection } from "./PoliciesSection";
 export { default as FAQSection } from "./FAQSection";
 export { default as ContactSection } from "./ContactSection";
 export { default as ScrollAnimationProvider } from "./ScrollAnimationProvider";
+export { default as Navbar } from "./Navbar";
+export { default as StructuredData } from "./StructuredData";
