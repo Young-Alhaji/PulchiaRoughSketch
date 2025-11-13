@@ -26,7 +26,7 @@ export default function ContactSection() {
               📧 Email Me
             </h3>
             <p className="text-white text-lg font-bold">
-              Damilolajoannah1@gmail.com
+              Oluwatosinoluwadamilola572@gmail.com
             </p>
           </div>
           <div
