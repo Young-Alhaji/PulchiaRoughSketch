@@ -23,7 +23,7 @@ export default function ContactSection() {
             data-stagger-item
           >
             <h3 className="text-xl font-semibold mb-3 animate-bounce-gentle">
-              📧 Email Me
+              📧 Email
             </h3>
             <p className="text-white text-lg font-bold">
               Oluwatosinoluwadamilola572 <br />
@@ -36,7 +36,7 @@ export default function ContactSection() {
             data-stagger-item
           >
             <h3 className="text-xl font-semibold mb-3 animate-bounce-gentle">
-              📱 Call/Text
+              📱 Call
             </h3>
             <p className="text-white text-lg font-bold">0903 040 6284</p>
           </div>

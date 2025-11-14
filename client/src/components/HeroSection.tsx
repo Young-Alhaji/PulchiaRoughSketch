@@ -53,7 +53,7 @@ export default function HeroSection() {
         </p>
 
         <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-2xl md:max-w-3xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-inter px-2">
-          Where every frame tells a story of beauty, connection, and magic.
+          Where every frame tells a story of beauty, connection, and magic. <br />
           Professional photography with a touch of whimsy and a whole lot of
           heart. Let's create memories that sparkle!
         </p>
