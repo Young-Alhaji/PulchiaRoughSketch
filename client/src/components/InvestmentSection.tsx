@@ -2,7 +2,7 @@ export default function InvestmentSection() {
   return (
     <section
       id="investment"
-      className="py-16 md:pt-16 px-4 bg-white opacity-0"
+      className="py-16 md:pt-16 px-4 bg-white opacity-100"
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-6xl mx-auto">

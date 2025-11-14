@@ -2,7 +2,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-20 px-4 bg-white"
+      className="py-20 px-4 bg-white opacity-100"
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-4xl mx-auto">

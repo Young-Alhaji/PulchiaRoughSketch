@@ -2,7 +2,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-16 md:pt-16 px-4 bg-gradient-to-br from-pink-400 via-rose-300 to-pink-500 animate-gradient-x"
+      className="py-16 md:pt-16 px-4 bg-gradient-to-br from-pink-400 via-rose-300 to-pink-500 animate-gradient-x opacity-100"
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-4xl mx-auto text-center text-white">
@@ -26,7 +26,8 @@ export default function ContactSection() {
               📧 Email Me
             </h3>
             <p className="text-white text-lg font-bold">
-              Oluwatosinoluwadamilola572 <br />@gmail.com 
+              Oluwatosinoluwadamilola572 <br />
+              @gmail.com
             </p>
           </div>
           <div
