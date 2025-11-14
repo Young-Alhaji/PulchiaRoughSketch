@@ -20,28 +20,10 @@ export default function FAQSection() {
             data-stagger-item
           >
             <h3 className="text-lg font-semibold text-rose-500 mb-2">
-              What should I wear for my session? 👗
+              Do you offer editing classes or photography lessons? 📷
             </h3>
             <p className="text-gray-600">
-              Choose outfits that make you feel confident and beautiful! Soft,
-              romantic colors work wonderfully. I provide a detailed styling
-              guide after booking with specific recommendations based on your
-              session type and location.
-            </p>
-          </div>
-
-          <div
-            className="bg-gradient-to-r from-rose-50 via-pink-50 to-rose-100 p-6 rounded-2xl border-2 border-rose-200"
-            data-scroll-animation="slide-up"
-            data-stagger-item
-          >
-            <h3 className="text-lg font-semibold text-rose-500 mb-2">
-              How long will it take to get my photos? 📅
-            </h3>
-            <p className="text-gray-600">
-              Your complete gallery will be ready within 2-3 weeks. I always
-              send sneak peeks within 48 hours because I know you're dying to
-              see them! Rush delivery is available for an additional fee.
+              No, we do not offer training classes at the moment.
             </p>
           </div>
 
@@ -51,13 +33,9 @@ export default function FAQSection() {
             data-stagger-item
           >
             <h3 className="text-lg font-semibold text-rose-500 mb-2">
-              Can we bring props or include pets? 🐕
+              Do you work on the mainland? 📍
             </h3>
-            <p className="text-gray-600">
-              Absolutely! I love incorporating meaningful props and furry family
-              members. Let's chat during our consultation about what would make
-              your session extra special and personal.
-            </p>
+            <p className="text-gray-600">No, we only work within the Island.</p>
           </div>
 
           <div
@@ -66,12 +44,10 @@ export default function FAQSection() {
             data-stagger-item
           >
             <h3 className="text-lg font-semibold text-rose-500 mb-2">
-              What happens if it rains? 🌧️
+              Do you edit pictures you didn't take?
             </h3>
             <p className="text-gray-600">
-              Don't worry! We'll monitor the weather closely and have backup
-              plans ready. I know some gorgeous covered locations and indoor
-              spots that create equally stunning images.
+              No, we only offer my editing services to my clients.
             </p>
           </div>
 
@@ -81,13 +57,9 @@ export default function FAQSection() {
             data-stagger-item
           >
             <h3 className="text-lg font-semibold text-rose-500 mb-2">
-              Do you travel for sessions? ✈️
+              Do you work on Sundays? 📅
             </h3>
-            <p className="text-gray-600">
-              Yes! I love destination sessions and elopements. Travel fees apply
-              for locations outside my local area, but I'm always up for an
-              adventure to capture your special moments in dream locations.
-            </p>
+            <p className="text-gray-600">No, we do not.</p>
           </div>
         </div>
       </div>
