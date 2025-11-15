@@ -15,10 +15,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-center justify-center px-4 relative overflow-hidden pt-20 md:pt-24">
+    <section className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-start justify-center px-4 relative overflow-hidden pt-16 md:pt-20">
       {/* Floating decorative elements - Hidden on mobile for cleaner look */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
-        <div className="absolute top-28 left-10 text-pink-300 text-4xl animate-bounce-gentle opacity-60">
+        <div className="absolute top-24 left-10 text-pink-300 text-4xl animate-bounce-gentle opacity-60">
           🌸
         </div>
         <div className="absolute top-32 right-16 text-rose-300 text-3xl animate-pulse-gentle opacity-50">
@@ -35,25 +35,25 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="text-center max-w-5xl relative z-10 px-2">
+      <div className="text-center max-w-5xl relative z-10 px-2 mt-8 md:mt-12">
         {/* Logo */}
-        <div className="flex justify-center mb-4 md:mb-6">
+        <div className="flex justify-center mb-3 md:mb-4">
           <Image
             src="/logo.png"
             alt="The Pulchia Lab Logo"
-            width={120}
-            height={120}
-            className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain animate-bounce-gentle"
+            width={140}
+            height={140}
+            className="w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36 object-contain animate-bounce-gentle"
             priority
           />
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 bg-clip-text text-transparent mb-4 md:mb-6 animate-pulse-gentle font-dancing-script">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 bg-clip-text text-transparent mb-3 md:mb-4 animate-pulse-gentle font-dancing-script">
           The Pulchia Lab
         </h1>
 
         {/* Decorative underline - Smaller on mobile */}
-        <div className="flex items-center justify-center mb-6 md:mb-8">
+        <div className="flex items-center justify-center mb-4 md:mb-6">
           <div className="h-0.5 md:h-1 w-12 md:w-20 bg-gradient-to-r from-transparent via-pink-300 to-transparent rounded-full"></div>
           <span className="mx-2 md:mx-4 text-pink-400 text-lg md:text-2xl animate-bounce-gentle">
             💖
@@ -61,11 +61,11 @@ export default function HeroSection() {
           <div className="h-0.5 md:h-1 w-12 md:w-20 bg-gradient-to-r from-transparent via-pink-300 to-transparent rounded-full"></div>
         </div>
 
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-rose-400 mb-4 md:mb-6 animate-fade-in-up animation-delay-300 font-semibold font-poppins px-2">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-rose-400 mb-3 md:mb-4 animate-fade-in-up animation-delay-300 font-semibold font-poppins px-2">
           ✨ Capturing Love, Light & Life ✨
         </p>
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-2xl md:max-w-3xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-inter px-2">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl md:max-w-3xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-inter px-2">
           Where every frame tells a story of beauty, connection, and magic.{" "}
           <br />
           Professional photography with a touch of whimsy and a whole lot of
