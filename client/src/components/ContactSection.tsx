@@ -6,7 +6,7 @@ export default function ContactSection() {
       data-scroll-animation="fade-in-scale"
     >
       <div className="max-w-4xl mx-auto text-center text-white">
-        <h2 className="text-5xl font-bold mb-4 animate-slide-in-from-top">
+        <h2 className="text-4xl font-bold mb-4 animate-slide-in-from-top">
           Let's Create Magic Together ✨
         </h2>
         <p className="text-xl mb-8 text-pink-100 animate-fade-in-up animation-delay-300">
@@ -60,6 +60,28 @@ export default function ContactSection() {
           >
             <i className="fab fa-instagram mr-2 text-xl"></i>
             Follow on Instagram 📱
+          </a>
+        </div>
+
+        {/* Additional Social Links */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in-up animation-delay-800">
+          <a
+            href="https://tiktok.com/@everything_pulchia"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-500 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center"
+          >
+            <i className="fab fa-tiktok mr-2 text-lg"></i>
+            TikTok 
+          </a>
+          <a
+            href="https://snapchat.com/t/8U5z4CBT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-pink-500 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center"
+          >
+            <i className="fab fa-snapchat mr-2 text-lg"></i>
+            Snapchat 
           </a>
         </div>
 

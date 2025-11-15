@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -14,10 +15,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-center justify-center px-4 relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 flex items-center justify-center px-4 relative overflow-hidden pt-20 md:pt-24">
       {/* Floating decorative elements - Hidden on mobile for cleaner look */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
-        <div className="absolute top-20 left-10 text-pink-300 text-4xl animate-bounce-gentle opacity-60">
+        <div className="absolute top-28 left-10 text-pink-300 text-4xl animate-bounce-gentle opacity-60">
           🌸
         </div>
         <div className="absolute top-32 right-16 text-rose-300 text-3xl animate-pulse-gentle opacity-50">
@@ -35,6 +36,18 @@ export default function HeroSection() {
       </div>
 
       <div className="text-center max-w-5xl relative z-10 px-2">
+        {/* Logo */}
+        <div className="flex justify-center mb-4 md:mb-6">
+          <Image
+            src="/logo.png"
+            alt="The Pulchia Lab Logo"
+            width={120}
+            height={120}
+            className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain animate-bounce-gentle"
+            priority
+          />
+        </div>
+
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-pink-400 via-rose-300 to-pink-500 bg-clip-text text-transparent mb-4 md:mb-6 animate-pulse-gentle font-dancing-script">
           The Pulchia Lab
         </h1>
@@ -53,7 +66,8 @@ export default function HeroSection() {
         </p>
 
         <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-2xl md:max-w-3xl mx-auto animate-fade-in-up animation-delay-500 leading-relaxed font-inter px-2">
-          Where every frame tells a story of beauty, connection, and magic. <br />
+          Where every frame tells a story of beauty, connection, and magic.{" "}
+          <br />
           Professional photography with a touch of whimsy and a whole lot of
           heart. Let's create memories that sparkle!
         </p>
